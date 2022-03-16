@@ -1,10 +1,12 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import QuoteForm from "../quotes/QuoteForm"
+import useHttp from '../hooks/use-http';
 
 
 function NewQuote() {
   const navigate=useNavigate()
+  useHttp()
 
   const AddQue=data=>{
     console.log(data);

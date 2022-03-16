@@ -13,7 +13,7 @@ function App() {
     <Routes>
         <Route path="/" element={<h1>Welcome!</h1>} />
         <Route path="/quotes" element={<AllQuote />} />
-        <Route path="/detail/:anything" element={<DetailQuote />} />
+        <Route path="/detail/:anything/*" element={<DetailQuote />} />
         <Route path="/new" element={<NewQuote />} />
 
         <Route path="*" element={<NotFound />} />
